@@ -1,7 +1,2 @@
-require 'rubygems'
-require 'bundler'
-
-Bundler.require
-
-require './mini'
+require './boot'
 run Mini
