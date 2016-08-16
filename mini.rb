@@ -14,6 +14,12 @@ class Mini < Sinatra::Base
     redirect to "/#{short}/info"
   end
 
+  post "/urls.json" do
+    url = Url.create(original: params[:original])
+    short = Bijective.encode(url.id)
+    {url: { short: "#{request.base_url}/#{short}", original: url.original}}.to_json
+  end
+
   get "/:short/info/?" do
     url = Url[Bijective.decode(params[:short])]
     erb :info, locals: { url: url }
