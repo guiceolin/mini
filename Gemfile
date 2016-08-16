@@ -6,3 +6,5 @@ ruby '2.3.1'
 gem "sinatra"
 gem 'sinatra-sequel'
 gem 'pg'
+
+gem 'json'
