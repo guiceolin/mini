@@ -1,4 +1,11 @@
 class Mini < Sinatra::Base
+  use Rack::Session::Cookie
+  use OmniAuth::Strategies::Doorkeeper
+
+  get '/auth/:name/callback' do
+    auth = request.env['omniauth.auth']
+    "#{auth.inspect}"
+  end
 
   get "/" do
     "Welcome to Mini!"

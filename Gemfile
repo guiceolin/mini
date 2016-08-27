@@ -6,5 +6,6 @@ ruby '2.3.1'
 gem "sinatra"
 gem 'sinatra-sequel'
 gem 'pg'
+gem 'omniauth-oauth2'
 
 gem 'json'
