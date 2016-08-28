@@ -3,6 +3,9 @@ require 'bundler'
 
 Bundler.require
 
+# Load dotenv
+Dotenv.load
+
 require 'sinatra'
 
 # Start database

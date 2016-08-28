@@ -8,4 +8,6 @@ gem 'sinatra-sequel'
 gem 'pg'
 gem 'omniauth-oauth2'
 
+gem 'dotenv'
+
 gem 'json'
