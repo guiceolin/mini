@@ -10,4 +10,8 @@ gem 'omniauth-oauth2'
 
 gem 'dotenv'
 
+group :development do
+  gem 'pry-byebug'
+end
+
 gem 'json'
