@@ -1,6 +1,6 @@
 class Mini < Sinatra::Base
   use Rack::Session::Cookie
-  use OmniAuth::Strategies::Doorkeeper
+  use OmniAuth::Strategies::CeolIn
 
   get '/auth/:name/callback' do
     auth = request.env['omniauth.auth']
